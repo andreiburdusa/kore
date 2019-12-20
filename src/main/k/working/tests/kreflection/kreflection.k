@@ -1,12 +1,8 @@
-require "substitution.k"
-
 module KREFLECTION
   imports K-REFLECTION-SYMBOLIC
   imports K-REFLECTION
-  imports DOMAINS
-  imports SUBSTITUTION
 
-  syntax Val ::= "concrete"
+  syntax Concrete ::= "concrete"
 
   rule concrete => #isConcrete(#configuration)
 
